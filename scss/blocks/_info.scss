@@ -1,0 +1,38 @@
+.header__footer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 98px;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+
+}
+
+.info {
+	position: relative;
+	font-size: 18px;
+
+	&--map,
+	&--tel {
+		padding-left: 35px;
+		&::before{
+			content: "";
+
+			position: absolute;
+			left: 0px;
+			top: Opx;
+			width: 21px;
+			height: 21px;
+
+			background-repeat: no-repeat;
+		}
+	}
+
+	&--tel::before {
+		background-image: url('/img/header/phone.svg');
+	}
+
+	&--map::before {
+		background-image: url('/img/header/map.svg');
+	}
+}
