@@ -308,4 +308,83 @@ a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%), url("./../img/cta/Rectangle.jpg"), no-repeat, #C4C4C4;
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+
+.cta_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cta__text {
+  color: #FFF;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.cta__text p + p {
+  margin-top: 1em;
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 35px;
+  column-gap: 35px;
+}
+
+.form__input {
+  padding: 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  transition: background-color 0.2s ease-in;
+}
+.form__input::placeholder {
+  color: #BEBEBE;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.form__privacy {
+  color: #E7E7E7;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.23;
+}
+
+.form__btn {
+  padding: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  background: var(--accent, #D4C17F);
+  transition: background-color 0.2s ease-in;
+}
+.form__btn:hover {
+  background: #ddc676;
 }/*# sourceMappingURL=main.css.map */
