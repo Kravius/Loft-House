@@ -1,5 +1,24 @@
 .video {
+	position: relative;
 	text-align: center;
+
+	&::after {
+		content: "IV";
+
+		position: absolute;
+		top: 0;
+		left: calc(50% + 575px);
+		transform: translate(-50% ,0%);
+
+		opacity: 0.02;
+		color: $white;
+		text-align: center;
+		font-size: 400px;
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 1.35;
+	}
 }
 
 .video__link {
@@ -33,6 +52,6 @@
 }
 
 .video__link:hover .video__icon{
-	transform:  scale(1.2);
+	transform: translate(-50%, -50%) scale(1.2);
 	filter: saturate(1.5);
 }
