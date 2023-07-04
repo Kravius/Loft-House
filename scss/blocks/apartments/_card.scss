@@ -67,4 +67,10 @@
 	// &:hover {
 		// color: $white;
 	// }
+
+	@include mediaTablet {
+		font-size: 20px;
+		left: 30px;
+		bottom: 30px;
+	}
 }
