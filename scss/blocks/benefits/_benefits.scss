@@ -1,5 +1,24 @@
 .benefits {
-	padding: 120px 0 ;
+	position: relative;
+	padding: 120px 0;
+
+	&::after {
+		content: "II";
+
+		position: absolute;
+		top: 0;
+		left: calc(50% + 555px);
+		transform: translate(-50%, 0%);
+
+		opacity: 0.02;
+		color: $white;
+		text-align: center;
+		font-size: 400px;
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 1.35;
+	}
 }
 
 .benefits__row {
