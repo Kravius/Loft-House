@@ -1,5 +1,6 @@
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=Playfair:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+@import './../libs/youtubeLightbox/youtubeLightbox.css';
 * {
   padding: 0px;
   margin: 0px;
