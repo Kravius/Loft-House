@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>LoftHouse</title>
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
 </head>
 
 <body>
@@ -131,7 +132,7 @@
 					</div>
 					<form action="" class="cta__form form">
 						<input type="text" class="form__input" placeholder="Ваше имя">
-						<input type="text" class="form__input" placeholder="Ваш телефон">
+						<input date-tel-input type="text" class="form__input" placeholder="Ваш телефон">
 						<p class="form__privacy form__privacy--bottom">*Мы никому не передаем ваши данные. <br>
 							И не сохраняем ваш номер в базу.</p>
 						<button type="submit" class="form__btn">Посмотреть район</button>
@@ -143,7 +144,7 @@
 		<section class="video none1">
 			<h2 class="visually-hidden">Video Loft House</h2>
 			<div class="container">
-				<a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" class="video__link">
+				<a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" data-youtubeLightbox class="video__link">
 					<img src="./img/video/play-button.svg" alt="" class="video__icon">
 					<img src="./img/video/video-img.jpg" alt="" class="video__img">
 				</a>
@@ -170,7 +171,7 @@
 					<p class="form__privacy form__privacy--bottom">*Мы никому не передаем ваши данные. <br>
 						И не сохраняем ваш номер в базу.</p>
 					<input type="text" class="form__input" placeholder="Ваше имя">
-					<input type="text" class="form__input" placeholder="Ваш телефон">
+					<input date-tel-input type="text" class="form__input" placeholder="Ваш телефон">
 					<button type="submit" class="form__btn">Посмотреть район</button>
 			</div>
 		</section>
@@ -222,6 +223,20 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- youtube LighBox -->
+	<div id="youtubelightbox" class="youtubelightbox">
+		<div class="youtubelightbox__centeredchild">
+			 <div class="youtubelightbox__videowrapper">
+				  <div id="youtubelightboxPlayer"></div>
+			 </div>
+		</div>
+  </div>
+
+	<script src="./libs/phoneMask/mask.js"></script>
+	<script src="./libs/phoneMask/mask_list.js"></script>
+	<script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
 	<script src="./js/main.js"></script>
 </body>
 
